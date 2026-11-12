@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vostronix.github.io/art-of-beauty/sitemap.xml
