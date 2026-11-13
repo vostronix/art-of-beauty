@@ -425,11 +425,19 @@ h1 em, h2 em { font-style: normal; color: var(--accent); font-weight: 400; }
   box-shadow: var(--shadow);
 }
 
-.price-table th,
-.price-table td {
+.price-table th {
   padding: 1.2rem 1.5rem;
   text-align: left;
   border-bottom: 1px solid var(--line);
+}
+
+.price-table td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.price-table td:last-child {
+  text-align: right;
 }
 
 .price-table th {
@@ -494,6 +502,10 @@ h1 em, h2 em { font-style: normal; color: var(--accent); font-weight: 400; }
     font-size: 1.25rem;
     margin-bottom: 1.4rem;
   }
+
+  .price-table td:last-child {
+    text-align: right;
+  }
 }
 
 @media (max-width: 600px) {
@@ -505,6 +517,10 @@ h1 em, h2 em { font-style: normal; color: var(--accent); font-weight: 400; }
   .price-table td {
     padding: 0.9rem 0.8rem;
     font-size: 0.9rem;
+  }
+  
+  .price-table td:last-child {
+    text-align: right;
   }
   
   .special-item {
